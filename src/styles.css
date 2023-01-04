@@ -9,14 +9,61 @@ body {
 .hero {
   background: rgb(245, 244, 244);
   margin: 10px;
-  border: 1px solid rgb(138, 127, 127);
+  border: 1px solid rgb(155, 150, 150);
   border-radius: 6px;
 }
 
 .title {
-  padding: 10px;
+  padding-left: 10px;
   width: 100%;
   height: 40px;
+  border-bottom: 1px solid rgb(155, 150, 150);
+}
+
+.group-header {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgb(245, 244, 244);
+  border: 1px solid rgb(155, 150, 150);
+}
+
+.hashtag {
+  width: 10%;
+  padding-left: 5px;
+  justify-content: left;
+}
+
+.group-section {
+  width: 30%;
+  padding-left: 5px;
+  justify-content: left;
+}
+
+.slot-section {
+  width: 60%;
+  padding-left: 5px;
+  justify-content: left;
+}
+
+.items1 {
+  display: flex;
+  padding-top: 10px;
+  height: 40px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.items-2 {
+  display: flex;
+  padding-top: 10px;
+  height: 40px;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 10px;
+  border-top: 1px solid rgb(155, 150, 150);
+  border-bottom: 1px solid rgb(155, 150, 150);
+  padding-bottom: 20px;
 }
 
 .title-one {
@@ -24,14 +71,102 @@ body {
   font-weight: 300;
 }
 
-.group-header {
-  display: flex;
-}
-
 .group-container {
+  padding-top: 15px;
   background: white;
 }
 
 .add-group {
   margin: 10px;
+}
+
+.add-group-btn {
+  background: #2377f9;
+  color: white;
+  font-size: 14px;
+}
+
+.group-content {
+  padding: 5px 5px 10px 10px;
+  display: flex;
+}
+
+.group-items {
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slot-items {
+  flex-direction: row;
+  width: 60%;
+  gap: 5px;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+
+.slot-item {
+  display: block;
+}
+
+.rm-btn1 {
+  justify-content: left;
+}
+
+.remove-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  font-weight: 300;
+  background: red;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.slot-name {
+  width: 100%;
+  line-height: 30px;
+  justify-content: left;
+}
+
+.rm-btn2 {
+  justify-content: right;
+  margin: auto auto 20px 20px;
+}
+
+.group-name {
+  width: 100%;
+  padding-left: 20px;
+  line-height: 30px;
+  margin-right: 20px;
+  justify-content: right;
+  border-radius: 2px;
+}
+
+.slot-content {
+  width: 100%;
+}
+
+.group-title,
+.slot-title {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  padding-left: 10px;
+  border: 1px solid rgb(155, 150, 150);
+  border-radius: 2px;
+}
+
+.add-slot {
+  padding: 10px 10px 10px 10px;
+}
+
+.add-slot-btn {
+  font-size: 18px;
+  background: #4ccde2;
+  color: white;
 }
