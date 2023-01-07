@@ -102,18 +102,22 @@ body {
   width: 60%;
   gap: 5px;
   padding-left: 10px;
+  padding-right: 10px;
   justify-content: space-between;
 }
 
 .slot-item {
   display: block;
+  list-style: none;
+  overflow: scroll;
 }
 
 .rm-btn1 {
   justify-content: left;
 }
 
-.remove-btn {
+.remove-btn1,
+.remove-btn2 {
   width: 30px;
   height: 30px;
   font-size: 24px;
@@ -161,11 +165,13 @@ body {
 }
 
 .add-slot {
+  margin-top: 5px;
+  margin-left: 10px;
   padding: 10px 10px 10px 10px;
 }
 
 .add-slot-btn {
-  font-size: 18px;
+  font-size: 16px;
   background: #4ccde2;
   color: white;
 }

@@ -115,7 +115,7 @@ describe('Test remove completed task', () => {
     for (let i = 0; i < listTask.length; i += 1) {
       firstArrayIndex.push(i);
     }
-    
+
     list.forEach((element) => secondArrayIndex.push(element.index));
 
     const difference = firstArrayIndex.filter((x) => secondArrayIndex.indexOf(x) === -1);

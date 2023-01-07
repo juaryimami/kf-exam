@@ -12,13 +12,14 @@ const bundleRefreshHandlersAndUpdate = (listOfTask) => {
 };
 
 export const removeTask = (event) => {
-  const isRemoveIcon = event.target.classList.contains('remove');
-  if (isRemoveIcon) {
-    const listTasks = getDataLocalStorage();
-    const id = parseInt(event.target.parentElement.dataset.id, 10);
-    listTasks.splice(id, 1);
-    bundleRefreshHandlersAndUpdate(listTasks);
-  }
+  event.target.parentNode.parentNode.parentNode
+    .parentNode.removeChild(event.target.parentNode.parentNode.parentNode);
+};
+
+export const removeGroup = (event) => {
+  event.target.parentNode.parentNode.parentNode
+    .parentNode.parentNode.parentNode.removeChild(event.target.parentNode
+      .parentNode.parentNode.parentNode.parentNode);
 };
 
 export const removeTaskChecked = () => {
