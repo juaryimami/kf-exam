@@ -2,13 +2,13 @@
 
 # To Do list Project
 
-In this project, I set up my To-Do List web page. My goal was add the functionality to add and display each todo task inside my task list. 
+In this project, I set up my dynamic form web page. My goal was add the functionality to add and remove each slot from their group and also removing the group one by one. 
 
-![screenshot](/public/Screenshot%20from%202022-10-06%2009-06-02.png)
+![screenshot](/public/Screenshot%20from%202023-01-07%2020-02-43.png)
 
 ## :red_circle: Live Demo
 You can view my hosted website in the link shown below.
-GitHub: [@JUPAC](https://juaryimami.github.io/todo-list-app/dist/)
+GitHub: [@JUPAC](https://juaryimami.github.io/kf-exam/dist/)
 
 ## :hammer: Built With
 
@@ -16,7 +16,7 @@ GitHub: [@JUPAC](https://juaryimami.github.io/todo-list-app/dist/)
 
 To get a local copy up and running follow these simple steps:
 
-1. Go to the [repository page]( https://juaryimami.github.io/todo-list-app/).
+1. Go to the [repository page]( https://juaryimami.github.io/kf-exam/).
 2. Press the "Code" button and copy the link.
 3. Clone it using git command `git clone <link>`.
 
@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple steps:
    - A web browser to view the output.
 
 ## Setup
-   - To clone my repository run this command `https://github.com/juaryimami/todo-list-app.git`  
+   - To clone my repository run this command `https://github.com/juaryimami/kf-exam.git`  
 
 ## Run tests
    For tracking linters errors and also to run web pack manually locally you need to follow these steps:
@@ -74,7 +74,7 @@ To get a local copy up and running follow these simple steps:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/juaryimami/todo-list-app/issues).
+Feel free to check the [issues page](https://github.com/juaryimami/kf-exam/issues).
 
 ## :grey_exclamation: Acknowledgments
 

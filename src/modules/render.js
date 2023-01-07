@@ -1,11 +1,12 @@
 import { createElement, getElement } from './tools.js';
+import { groupCounter, slotCounter } from './itemCounter.js';
 
 const groupContainer = getElement('.group-container');
 
 const fragment = document.createDocumentFragment();
 const groupFragment = document.createDocumentFragment();
 
-const createSlotStructure = () => {
+const createSlotStructure = (event) => {
   const taskContainer = createElement('li');
   taskContainer.setAttribute('draggable', 'true');
   taskContainer.classList.add('slot-content');
@@ -22,7 +23,7 @@ const createSlotStructure = () => {
   const removeButton = createElement('button');
   removeButton.classList.add('remove-btn2');
 
-  slotTitle.textContent = 'slot 2';
+  slotTitle.textContent = `slot${slotCounter(event) + 1}`;
   removeButton.textContent = '-';
 
   nameDiv.appendChild(slotTitle);
@@ -37,6 +38,7 @@ const createSlotStructure = () => {
 
 const createGroupStructure = () => {
   const gphead = createElement('div');
+  gphead.classList.add('header');
   const groupHeader = createElement('div');
   groupHeader.classList.add('group-header');
   const hashtag = createElement('div');
@@ -66,7 +68,7 @@ const createGroupStructure = () => {
   groupName.classList.add('group-name');
   const groupTitle = createElement('h3');
   groupTitle.classList.add('group-title');
-  groupTitle.textContent = 'group_2';
+  groupTitle.textContent = `group${groupCounter() + 1}`;
 
   const slotItems = createElement('div');
   slotItems.classList.add('slot-items');
@@ -80,7 +82,7 @@ const createGroupStructure = () => {
   slotName.classList.add('slot-name');
   const slotTitle = createElement('h3');
   slotTitle.classList.add('slot-title');
-  slotTitle.textContent = 'slot 2';
+  slotTitle.textContent = `g${groupCounter() + 1}_slot1`;
   const rmvBtn2 = createElement('div');
   rmvBtn2.classList.add('rm-btn2');
   const btn = createElement('button');
@@ -127,7 +129,7 @@ export const renderGroup = () => {
 export const renderTaskDom = (event) => {
   const parentElement = event.target.parentNode;
   const slotContainer = parentElement.parentNode.firstElementChild;
-  createSlotStructure();
+  createSlotStructure(event);
   slotContainer.appendChild(fragment);
 };
 
