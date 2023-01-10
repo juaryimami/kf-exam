@@ -22,8 +22,9 @@ const createSlotStructure = (event) => {
   slotTitle.classList.add('slot-title');
   const removeButton = createElement('button');
   removeButton.classList.add('remove-btn2');
+  const gName = event.target.dataset.id;
 
-  slotTitle.textContent = `slot${slotCounter(event) + 1}`;
+  slotTitle.textContent = `${gName}slot${slotCounter(event) + 1}`;
   removeButton.textContent = '-';
 
   nameDiv.appendChild(slotTitle);
@@ -93,6 +94,7 @@ const createGroupStructure = () => {
   const addSlotButton = createElement('button');
   addSlotButton.classList.add('add-slot-btn');
   addSlotButton.textContent = '+ Add Slot';
+  addSlotButton.dataset.id = `g${groupCounter() + 1}_`;
 
   addSlot.appendChild(addSlotButton);
   slotName.appendChild(slotTitle);
