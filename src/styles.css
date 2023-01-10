@@ -14,7 +14,7 @@ body {
 
 .title {
   padding-left: 10px;
-  margin-right: 10px;
+  padding-right: 10px;
   width: 100%;
   height: 40px;
   border-bottom: 1px solid rgb(155, 150, 150);
@@ -50,7 +50,7 @@ body {
   display: flex;
   padding-top: 10px;
   height: 40px;
-  align-items: center;
+  justify-content: space-between;
   flex-direction: row;
 }
 
@@ -102,6 +102,7 @@ body {
 .slot-items {
   flex-direction: row;
   width: 60%;
+  justify-content: space-between;
   padding-left: 10px;
   padding-right: 0;
 }
@@ -117,6 +118,7 @@ body {
 
 .rm-btn1 {
   justify-content: left;
+  padding-top: 10px;
 }
 
 .remove-btn1,
@@ -143,10 +145,10 @@ body {
 }
 
 .group-name {
-  width: 100%;
-  padding-left: 50px;
+  width: 70%;
   line-height: 30px;
   margin-right: 20px;
+  align-items: flex-end;
   justify-content: right;
   border-radius: 2px;
 }
